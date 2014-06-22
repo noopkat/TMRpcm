@@ -477,8 +477,8 @@ void TMRpcm::play(char* filename, unsigned long seekPoint){
 
 #if !defined (USE_TIMER2)
     //if(qual)
-    if(bitRead(optionByte,6)){resolution = 10 * (800000/SAMPLE_RATE);}
-    else{ resolution = 10 * (1600000/SAMPLE_RATE);
+    if(bitRead(optionByte,6)){resolution = 10 * (400000/SAMPLE_RATE);}
+    else{ resolution = 10 * (800000/SAMPLE_RATE);
 	}
 #else
 	resolution = 255;
@@ -797,8 +797,8 @@ void TMRpcm::play(char* filename, unsigned long seekPoint, boolean which){
 			#endif
 		}
 	#if !defined (USE_TIMER2)
-	    if(bitRead(optionByte,6)){resolution = 10 * (800000/SAMPLE_RATE);}
-        else{ resolution = 10 * (1600000/SAMPLE_RATE);}
+	    if(bitRead(optionByte,6)){resolution = 10 * (400000/SAMPLE_RATE);}
+        else{ resolution = 10 * (800000/SAMPLE_RATE);}
     #else
     	resolution = 255;
     #endif

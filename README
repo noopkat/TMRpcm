@@ -1,4 +1,7 @@
+Changed in this fork:
 
+- Adapted timings for 8Mhz operation. (Atmega 328P without external oscillator)
+  Please note that lowering the clock speed also limits available sample rates, 11025 works fine for me.
 
 See the wiki at https://github.com/TMRh20/TMRpcm/wiki for info
 
